@@ -268,7 +268,7 @@ def confidence_loss(pred_xy, pred_wh, pred_confidence, true_boxes, detectors_mas
     iou_scores = intersect_areas / union_areas
 
     # Best IOUs for each loction.
-    best_ious = tf.reduce_max(iou_scores, axis=-1, keepdims=True)  # Best IOU scores.
+    best_ious = tf.reduce_max(iou_scores, axis=-1, keep_dims=True)  # Best IOU scores.
     # [batch, 13, 13, 3, 1]
 
     # A detector has found an object if IOU > thresh for some true box.
