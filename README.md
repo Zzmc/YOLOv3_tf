@@ -25,8 +25,9 @@ _traindata: VOC2007 trainval & VOC2012 trainval_
 - :fire: [YAD2K](https://github.com/allanzelener/YAD2K) :fire:
 
 ##### Requirement
-    1. TensorFlow 1.*
+    1. TensorFlow >=1.4
     2. easydict
     3. PIL
     4. numpy
     5. matplotlib
+    6. python3
